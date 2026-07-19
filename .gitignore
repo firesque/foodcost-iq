@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# NOTE: data_store/ is intentionally NOT ignored — the deployed app reads
+# its pre-built dataset from there. Keep the GitHub repo PRIVATE.

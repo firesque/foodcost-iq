@@ -1,22 +1,18 @@
 # 🍳 FoodCost IQ
 
-**Restaurant food cost, recipe costing & waste intelligence engine** — built for
-multi-unit operators. Turns recipe books, Sysco/FreshPoint invoices and POS
-sales exports into an executive-grade margin and waste command center.
+**Restaurant food cost, recipe costing & waste intelligence engine**
 
 ---
 
 ## What it does
 
-| Engine | What you get |
-|---|---|
-| **Recipe costing** | Plate cost for every menu item (sub-recipes/preps exploded), food-cost % and gross margin by item |
-| **Theoretical usage** | POS sales × recipes = what you *should* have used, by ingredient, in dollars and physical units |
-| **Waste & variance** | Purchases vs theoretical usage, waste-risk scores, estimated waste dollars, likely causes |
-| **Vendor analysis** | Sysco vs FreshPoint spend, case-price trends, biggest increases, invoice drilldown |
-| **AI insights** | Prioritized plain-English findings with recommended actions and dollar impact (deterministic engine; optional Claude LLM narrative) |
-| **Scenario studio** | Model ingredient price shocks, menu repricing, portion changes, volume shifts |
-| **Data quality** | Unmatched POS items, unmapped vendor SKUs, suspicious prices, unit problems |
+Recipe cost Plate cost for every menu item (sub-recipes/preps exploded), food-cost % and gross margin by item |
+Theoretical usage POS sales × recipes = what you *should* have used, by ingredient, in dollars and physical units |
+Waste & variance Purchases vs theoretical usage, waste-risk scores, estimated waste dollars, likely causes |
+Vendor analysis Sysco vs FreshPoint spend, case-price trends, biggest increases, invoice drilldown |
+AI insights Prioritized plain-English findings with recommended actions and dollar impact (deterministic engine; optional Claude LLM narrative) |
+Scenario studio Model ingredient price shocks, menu repricing, portion changes, volume shifts |
+Data quality Unmatched POS items, unmapped vendor SKUs, suspicious prices, unit problems |
 
 ## Quick start
 
@@ -125,5 +121,5 @@ FoodCostApp/
 * Pack-size → physical unit conversion is best-effort (dollar math is exact).
 * Invoice locations without POS exports (e.g. a store whose sales mix wasn't
   exported) inflate chain-level variance; filter by location when needed.
-* POS modifiers with $0 price ("NO BEVERAGE") don't map to recipes — they're
+* POS modifiers with $0 price ("NO BEVERAGE") don't map to recipes they're
   surfaced on the Data Quality page rather than silently dropped.
